@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/ckbChocolate_syrup"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/checkbox_1"
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/ckbSprinkles"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/checkbox_2"
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintEnd_toEndOf="@+id/ckbChocolate_syrup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ckbChocolate_syrup"
+        app:layout_constraintTop_toBottomOf="@+id/ckbChocolate_syrup" />
+
+    <CheckBox
+        android:id="@+id/ckbCrushed_nuts"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/checkbox_3"
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintEnd_toEndOf="@+id/ckbSprinkles"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ckbSprinkles"
+        app:layout_constraintTop_toBottomOf="@+id/ckbSprinkles" />
+
+    <CheckBox
+        android:id="@+id/ckbCherries"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/checkbox_4"
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintEnd_toEndOf="@+id/ckbCrushed_nuts"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ckbCrushed_nuts"
+        app:layout_constraintTop_toBottomOf="@+id/ckbCrushed_nuts" />
+
+    <CheckBox
+        android:id="@+id/ckbOrio_cookie"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/checkbox_5"
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintEnd_toEndOf="@+id/ckbCherries"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ckbCherries"
+        app:layout_constraintTop_toBottomOf="@+id/ckbCherries" />
+
+    <Button
+        android:id="@+id/btnShowToast"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:text="@string/btnShowToast"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:onClick="showToast"
+        app:backgroundTint="@color/WhiteGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckbOrio_cookie"
+        app:layout_constraintVertical_bias="0.029" />
+</androidx.constraintlayout.widget.ConstraintLayout>
